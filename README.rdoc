@@ -5,5 +5,6 @@ Small app that takes a www.flightradar24.com flight id and uses it to display re
 i.e. If the chosen flight is currently flying over Paris, then the app will display photos of Paris.
 
 == Usage
-http://localhost:3000/flight/<flightradar24-flight-id>/<num-photos-to-display>
-http://localhost:3000/flight/9114918/10 - will display 10 photos of the area that flight 9114918 (Air New Zealand flight ANZ630 from Queenstown - Auckland) is currently flying over.
+* <tt>http://localhost:3000/flight/&lt;flightradar24-flight-id&gt;/&lt;num-photos-to-display&gt</tt>
+
+* <tt>http://localhost:3000/flight/9114918/10</tt> - will display 10 photos of the area that flight 9114918 (Air New Zealand flight ANZ630 from Queenstown - Auckland) is currently flying over.
