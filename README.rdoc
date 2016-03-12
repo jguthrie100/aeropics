@@ -13,3 +13,6 @@ i.e. If the chosen flight is currently flying over Paris, then the app will disp
 * Need to set it up so that new photos are searched for on a continual basis, updating the photo stream as time passes
 * Implement small google map in the corner that displays current position of plane as well as location of the photo
 * Integrate info about plane/photo into display somewhere
+
+== BUGS
+* ~~Sometimes multiple images come up on screen at the same time (if two narrow images follow each other, both show up at the same time next to each other)~~

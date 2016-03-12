@@ -7,13 +7,13 @@
 }
 
 #photos a {
-	visible: false;
+	display:none;
 	height: 100%;
 	text-align: center;
 }
 
 #photos a:first-child {
-	visible: true;
+	display:inline;
 }
 
 #photos {
