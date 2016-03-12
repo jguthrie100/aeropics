@@ -1,0 +1,11 @@
+<% unless @photos.size == 0 %>
+  <% @photos.each do |photo| %>
+    <p>
+      <%= photo.location %><br />
+      <a href="<%= photo.page %>"><img src="<%= photo.source %>" /></a>
+    </p>
+  <% end %>
+<% else %>
+  <div><%= @place %></div>
+  <div>Only <%= @photos.size %> photos returned</div>
+<% end %>
