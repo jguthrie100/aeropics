@@ -1,7 +1,7 @@
 require 'flickraw'
 
 class Photo
-  attr_reader :info, :source, :page, :height, :width
+  attr_reader :info, :source, :page, :height, :width, :location
 
   def initialize pid
     # Auth variables
@@ -11,6 +11,7 @@ class Photo
     @info = flickr.photos.getInfo(photo_id: pid)
 
     get_size
+    set_location
   end
 
   def lat
@@ -21,10 +22,10 @@ class Photo
     return @info['location']['longitude']
   end
 
-  # Gets name of photo location
-  def location
+  # Sets name of photo location
+  def set_location
     location = flickr.places.findByLatLon(lat: lat, lon: lon)
-    location.size >= 1 ? (return location.first['name']) : (return "Unidentifiable location")
+    location.size >= 1 ? @location = location.first['name'] : @location = "Unidentifiable location"
   end
 
   # Gets the appropriately sized version of the photo (i.e. not the 6500 x 4000 original)
