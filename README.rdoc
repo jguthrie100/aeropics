@@ -1,28 +1,10 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Small app that takes a www.flightradar24.com flight id and uses it to display relevant photos according to the planes current location.
 
-Things you may want to cover:
+i.e. If the chosen flight is currently flying over Paris, then the app will display photos of Paris.
 
-* Ruby version
+== Usage
+* <tt>http://localhost:3000/flight/&lt;flightradar24-flight-id&gt;/&lt;num-photos-to-display&gt</tt>
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* <tt>http://localhost:3000/flight/9114918/10</tt> - will display 10 photos of the area that flight 9114918 (Air New Zealand flight ANZ630 from Queenstown - Auckland) is currently flying over.
