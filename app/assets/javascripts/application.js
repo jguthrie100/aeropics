@@ -14,3 +14,18 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+function cycleImages(){
+    var images = $('#photos a'),
+        now    = images.filter(':visible'),
+        next   = now.next().length ? now.next() : images.first(),
+        speed  = 3000;
+    
+    now.fadeOut(speed, function(){
+    	next.fadeIn(speed);
+    });
+}
+
+$(function() {
+    setInterval(cycleImages, 25000);
+});

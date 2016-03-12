@@ -8,3 +8,8 @@ i.e. If the chosen flight is currently flying over Paris, then the app will disp
 * <tt>http://localhost:3000/flight/&lt;flightradar24-flight-id&gt;/&lt;num-photos-to-display&gt</tt>
 
 * <tt>http://localhost:3000/flight/9114918/10</tt> - will display 10 photos of the area that flight 9114918 (Air New Zealand flight ANZ630 from Queenstown - Auckland) is currently flying over.
+
+== TODO
+* Need to set it up so that new photos are searched for on a continual basis, updating the photo stream as time passes
+* Implement small google map in the corner that displays current position of plane as well as location of the photo
+* Integrate info about plane/photo into display somewhere
