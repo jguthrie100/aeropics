@@ -37,7 +37,6 @@ class PicsController < ApplicationController
       break if @photos.size >= num_photos
       photo = Photo.new(p['id'])
 
-byebug
       # Little exception that stops "facetheworld" photos being used - some random flickr account that has 100,000+ photos tagged in various remote locations
       next if photo.info['owner']['nsid'] == "100597270@N04"
       
