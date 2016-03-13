@@ -9,6 +9,8 @@ i.e. If the chosen flight is currently flying over Paris, then the app will disp
 
 * <tt>http://localhost:3000/flight/9114918/10</tt> - will display 10 photos of the area that flight 9114918 (Air New Zealand flight ANZ630 from Queenstown - Auckland) is currently flying over.
 
+* ---- To get the flight_id, navigate to <tt>www.flightradar24.com</tt> and click on one of the yellow planes to select it. Then take the id from the end of the url. i.e. The flight_id for Flight SIA308 from Singapore to London (<tt>http://www.flightradar24.com/SIA308/913d397</tt>) is <tt>913d397</tt>. Paste the id into the url, as explained in the previous bullet point, and you'll be shown a slideshow of photos of where the plane is currently flying over.
+
 == TODO
 * Need to set it up so that new photos are searched for on a continual basis, updating the photo stream as time passes
 * Implement small google map in the corner that displays current position of plane as well as location of the photo
